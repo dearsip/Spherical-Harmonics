@@ -1,0 +1,6 @@
+{
+  "name": "SphericalHarmonics.Runtime",
+  "rootNamespace": "SphericalHarmonics",
+  "references": ["Unity.ugui"],
+  "autoReferenced": true
+}

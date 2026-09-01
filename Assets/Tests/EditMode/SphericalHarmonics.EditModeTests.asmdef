@@ -1,0 +1,8 @@
+{
+  "name": "SphericalHarmonics.EditModeTests",
+  "rootNamespace": "SphericalHarmonics.Tests",
+  "references": ["SphericalHarmonics.Runtime"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": false
+}

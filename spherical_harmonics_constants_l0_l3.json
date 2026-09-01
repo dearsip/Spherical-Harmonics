@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "version": "0.4",
+    "range": "0 <= l <= 3, -l <= m <= l",
+    "complexConvention": "Normalized spherical harmonics with Condon-Shortley phase, matching the user-provided reference formulas.",
+    "realConvention": {
+      "mPositive": "cosine type",
+      "mNegative": "sine type",
+      "mZero": "zonal",
+      "definitionPositive": "R[l,+k] = (Y[l,-k] + (-1)^k Y[l,+k]) / sqrt(2)",
+      "definitionNegative": "R[l,-k] = i (Y[l,-k] - (-1)^k Y[l,+k]) / sqrt(2)",
+      "definitionZero": "R[l,0] = Y[l,0]"
+    }
+  },
+  "complexBasis": [
+    {
+      "l": 0,
+      "m": 0,
+      "coefficient": "1/(2√π)",
+      "angularFactor": "1",
+      "formula": "Y₀⁰ = 1/(2√π)"
+    },
+    {
+      "l": 1,
+      "m": -1,
+      "coefficient": "+1/2√(3/(2π))",
+      "angularFactor": "e^{-iφ} sinθ",
+      "formula": "Y₁⁻¹ = +1/2√(3/(2π)) e^{-iφ} sinθ"
+    },
+    {
+      "l": 1,
+      "m": 0,
+      "coefficient": "1/2√(3/π)",
+      "angularFactor": "cosθ",
+      "formula": "Y₁⁰ = 1/2√(3/π) cosθ"
+    },
+    {
+      "l": 1,
+      "m": 1,
+      "coefficient": "-1/2√(3/(2π))",
+      "angularFactor": "e^{+iφ} sinθ",
+      "formula": "Y₁¹ = -1/2√(3/(2π)) e^{+iφ} sinθ"
+    },
+    {
+      "l": 2,
+      "m": -2,
+      "coefficient": "1/4√(15/(2π))",
+      "angularFactor": "e^{-2iφ} sin²θ",
+      "formula": "Y₂⁻² = 1/4√(15/(2π)) e^{-2iφ} sin²θ"
+    },
+    {
+      "l": 2,
+      "m": -1,
+      "coefficient": "+1/2√(15/(2π))",
+      "angularFactor": "e^{-iφ} sinθ cosθ",
+      "formula": "Y₂⁻¹ = +1/2√(15/(2π)) e^{-iφ} sinθ cosθ"
+    },
+    {
+      "l": 2,
+      "m": 0,
+      "coefficient": "1/4√(5/π)",
+      "angularFactor": "3cos²θ−1",
+      "formula": "Y₂⁰ = 1/4√(5/π)(3cos²θ−1)"
+    },
+    {
+      "l": 2,
+      "m": 1,
+      "coefficient": "-1/2√(15/(2π))",
+      "angularFactor": "e^{+iφ} sinθ cosθ",
+      "formula": "Y₂¹ = -1/2√(15/(2π)) e^{+iφ} sinθ cosθ"
+    },
+    {
+      "l": 2,
+      "m": 2,
+      "coefficient": "1/4√(15/(2π))",
+      "angularFactor": "e^{+2iφ} sin²θ",
+      "formula": "Y₂² = 1/4√(15/(2π)) e^{+2iφ} sin²θ"
+    },
+    {
+      "l": 3,
+      "m": -3,
+      "coefficient": "+1/8√(35/π)",
+      "angularFactor": "e^{-3iφ} sin³θ",
+      "formula": "Y₃⁻³ = +1/8√(35/π) e^{-3iφ} sin³θ"
+    },
+    {
+      "l": 3,
+      "m": -2,
+      "coefficient": "1/4√(105/(2π))",
+      "angularFactor": "e^{-2iφ} sin²θ cosθ",
+      "formula": "Y₃⁻² = 1/4√(105/(2π)) e^{-2iφ} sin²θ cosθ"
+    },
+    {
+      "l": 3,
+      "m": -1,
+      "coefficient": "+1/8√(21/π)",
+      "angularFactor": "e^{-iφ} sinθ(5cos²θ−1)",
+      "formula": "Y₃⁻¹ = +1/8√(21/π) e^{-iφ} sinθ(5cos²θ−1)"
+    },
+    {
+      "l": 3,
+      "m": 0,
+      "coefficient": "1/4√(7/π)",
+      "angularFactor": "5cos³θ−3cosθ",
+      "formula": "Y₃⁰ = 1/4√(7/π)(5cos³θ−3cosθ)"
+    },
+    {
+      "l": 3,
+      "m": 1,
+      "coefficient": "-1/8√(21/π)",
+      "angularFactor": "e^{+iφ} sinθ(5cos²θ−1)",
+      "formula": "Y₃¹ = -1/8√(21/π) e^{+iφ} sinθ(5cos²θ−1)"
+    },
+    {
+      "l": 3,
+      "m": 2,
+      "coefficient": "1/4√(105/(2π))",
+      "angularFactor": "e^{+2iφ} sin²θ cosθ",
+      "formula": "Y₃² = 1/4√(105/(2π)) e^{+2iφ} sin²θ cosθ"
+    },
+    {
+      "l": 3,
+      "m": 3,
+      "coefficient": "-1/8√(35/π)",
+      "angularFactor": "e^{+3iφ} sin³θ",
+      "formula": "Y₃³ = -1/8√(35/π) e^{+3iφ} sin³θ"
+    }
+  ],
+  "realBasis": [
+    {
+      "l": 0,
+      "m": 0,
+      "type": "zonal",
+      "label": "s",
+      "yCombination": "Y₀⁰",
+      "normalizationExact": "1/(2√π)",
+      "normalizationNumeric": 0.28209479177387814,
+      "sphericalShape": "1",
+      "cartesianShape": "1",
+      "normalizedFormula": "1/(2√π) × (1)"
+    },
+    {
+      "l": 1,
+      "m": -1,
+      "type": "sine",
+      "label": "p_y",
+      "yCombination": "i(Y₁⁻¹ + Y₁¹)/√2",
+      "normalizationExact": "1/2√(3/π)",
+      "normalizationNumeric": 0.4886025119029199,
+      "sphericalShape": "sinθ sinφ",
+      "cartesianShape": "y/r",
+      "normalizedFormula": "1/2√(3/π) × (sinθ sinφ)"
+    },
+    {
+      "l": 1,
+      "m": 0,
+      "type": "zonal",
+      "label": "p_z",
+      "yCombination": "Y₁⁰",
+      "normalizationExact": "1/2√(3/π)",
+      "normalizationNumeric": 0.4886025119029199,
+      "sphericalShape": "cosθ",
+      "cartesianShape": "z/r",
+      "normalizedFormula": "1/2√(3/π) × (cosθ)"
+    },
+    {
+      "l": 1,
+      "m": 1,
+      "type": "cosine",
+      "label": "p_x",
+      "yCombination": "(Y₁⁻¹ − Y₁¹)/√2",
+      "normalizationExact": "1/2√(3/π)",
+      "normalizationNumeric": 0.4886025119029199,
+      "sphericalShape": "sinθ cosφ",
+      "cartesianShape": "x/r",
+      "normalizedFormula": "1/2√(3/π) × (sinθ cosφ)"
+    },
+    {
+      "l": 2,
+      "m": -2,
+      "type": "sine",
+      "label": "d_xy",
+      "yCombination": "i(Y₂⁻² − Y₂²)/√2",
+      "normalizationExact": "1/4√(15/π)",
+      "normalizationNumeric": 0.5462742152960396,
+      "sphericalShape": "sin²θ sin2φ",
+      "cartesianShape": "2xy/r²",
+      "normalizedFormula": "1/4√(15/π) × (sin²θ sin2φ)"
+    },
+    {
+      "l": 2,
+      "m": -1,
+      "type": "sine",
+      "label": "d_yz",
+      "yCombination": "i(Y₂⁻¹ + Y₂¹)/√2",
+      "normalizationExact": "1/2√(15/π)",
+      "normalizationNumeric": 1.0925484305920792,
+      "sphericalShape": "sinθ cosθ sinφ",
+      "cartesianShape": "yz/r²",
+      "normalizedFormula": "1/2√(15/π) × (sinθ cosθ sinφ)"
+    },
+    {
+      "l": 2,
+      "m": 0,
+      "type": "zonal",
+      "label": "d_(3z²−r²)",
+      "yCombination": "Y₂⁰",
+      "normalizationExact": "1/4√(5/π)",
+      "normalizationNumeric": 0.31539156525252005,
+      "sphericalShape": "3cos²θ−1",
+      "cartesianShape": "(3z²−r²)/r²",
+      "normalizedFormula": "1/4√(5/π) × (3cos²θ−1)"
+    },
+    {
+      "l": 2,
+      "m": 1,
+      "type": "cosine",
+      "label": "d_xz",
+      "yCombination": "(Y₂⁻¹ − Y₂¹)/√2",
+      "normalizationExact": "1/2√(15/π)",
+      "normalizationNumeric": 1.0925484305920792,
+      "sphericalShape": "sinθ cosθ cosφ",
+      "cartesianShape": "xz/r²",
+      "normalizedFormula": "1/2√(15/π) × (sinθ cosθ cosφ)"
+    },
+    {
+      "l": 2,
+      "m": 2,
+      "type": "cosine",
+      "label": "d_(x²−y²)",
+      "yCombination": "(Y₂⁻² + Y₂²)/√2",
+      "normalizationExact": "1/4√(15/π)",
+      "normalizationNumeric": 0.5462742152960396,
+      "sphericalShape": "sin²θ cos2φ",
+      "cartesianShape": "(x²−y²)/r²",
+      "normalizedFormula": "1/4√(15/π) × (sin²θ cos2φ)"
+    },
+    {
+      "l": 3,
+      "m": -3,
+      "type": "sine",
+      "label": "f_y(3x²−y²)",
+      "yCombination": "i(Y₃⁻³ + Y₃³)/√2",
+      "normalizationExact": "1/4√(35/(2π))",
+      "normalizationNumeric": 0.5900435899266435,
+      "sphericalShape": "sin³θ sin3φ",
+      "cartesianShape": "y(3x²−y²)/r³",
+      "normalizedFormula": "1/4√(35/(2π)) × (sin³θ sin3φ)"
+    },
+    {
+      "l": 3,
+      "m": -2,
+      "type": "sine",
+      "label": "f_xyz",
+      "yCombination": "i(Y₃⁻² − Y₃²)/√2",
+      "normalizationExact": "1/4√(105/π)",
+      "normalizationNumeric": 1.445305721320277,
+      "sphericalShape": "sin²θ cosθ sin2φ",
+      "cartesianShape": "2xyz/r³",
+      "normalizedFormula": "1/4√(105/π) × (sin²θ cosθ sin2φ)"
+    },
+    {
+      "l": 3,
+      "m": -1,
+      "type": "sine",
+      "label": "f_y(5z²−r²)",
+      "yCombination": "i(Y₃⁻¹ + Y₃¹)/√2",
+      "normalizationExact": "1/4√(21/(2π))",
+      "normalizationNumeric": 0.4570457994644658,
+      "sphericalShape": "sinθ(5cos²θ−1) sinφ",
+      "cartesianShape": "y(5z²−r²)/r³",
+      "normalizedFormula": "1/4√(21/(2π)) × (sinθ(5cos²θ−1) sinφ)"
+    },
+    {
+      "l": 3,
+      "m": 0,
+      "type": "zonal",
+      "label": "f_z(5z²−3r²)",
+      "yCombination": "Y₃⁰",
+      "normalizationExact": "1/4√(7/π)",
+      "normalizationNumeric": 0.3731763325901154,
+      "sphericalShape": "5cos³θ−3cosθ",
+      "cartesianShape": "z(5z²−3r²)/r³",
+      "normalizedFormula": "1/4√(7/π) × (5cos³θ−3cosθ)"
+    },
+    {
+      "l": 3,
+      "m": 1,
+      "type": "cosine",
+      "label": "f_x(5z²−r²)",
+      "yCombination": "(Y₃⁻¹ − Y₃¹)/√2",
+      "normalizationExact": "1/4√(21/(2π))",
+      "normalizationNumeric": 0.4570457994644658,
+      "sphericalShape": "sinθ(5cos²θ−1) cosφ",
+      "cartesianShape": "x(5z²−r²)/r³",
+      "normalizedFormula": "1/4√(21/(2π)) × (sinθ(5cos²θ−1) cosφ)"
+    },
+    {
+      "l": 3,
+      "m": 2,
+      "type": "cosine",
+      "label": "f_z(x²−y²)",
+      "yCombination": "(Y₃⁻² + Y₃²)/√2",
+      "normalizationExact": "1/4√(105/π)",
+      "normalizationNumeric": 1.445305721320277,
+      "sphericalShape": "sin²θ cosθ cos2φ",
+      "cartesianShape": "z(x²−y²)/r³",
+      "normalizedFormula": "1/4√(105/π) × (sin²θ cosθ cos2φ)"
+    },
+    {
+      "l": 3,
+      "m": 3,
+      "type": "cosine",
+      "label": "f_x(x²−3y²)",
+      "yCombination": "(Y₃⁻³ − Y₃³)/√2",
+      "normalizationExact": "1/4√(35/(2π))",
+      "normalizationNumeric": 0.5900435899266435,
+      "sphericalShape": "sin³θ cos3φ",
+      "cartesianShape": "x(x²−3y²)/r³",
+      "normalizedFormula": "1/4√(35/(2π)) × (sin³θ cos3φ)"
+    }
+  ]
+}
