@@ -12,6 +12,14 @@ namespace SphericalHarmonics.Tests
     public sealed class RuntimeCompositionTests
     {
         [Test]
+        public void TouchOrbitUsesDirectManipulationDirection()
+        {
+            Vector2 orbit=CameraGestureMath.TouchOrbitDelta(new Vector2(4,-3),.5f);
+            Assert.That(orbit.x,Is.EqualTo(-2).Within(1e-6));
+            Assert.That(orbit.y,Is.EqualTo(-1.5f).Within(1e-6));
+        }
+
+        [Test]
         public void BundledMathFontContainsFormulaGlyphs()
         {
             Font font=Resources.Load<Font>("Fonts/NotoSansMath-Regular");
